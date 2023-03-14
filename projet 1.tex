@@ -1,0 +1,48 @@
+Le projet consistera a créer un calendrier collaboratif que plusieurs utilisateurs pourront partager. Il y aura 5 colonnes principales pour les 5 jours dela semaine qui seront sous-divisées en groupes de TD (2,4 ou 6).
+Enlignesil y aura uneligne par 1/4 d'heure entre 8h et 19h. Un calendrier sera rempli de slots d'enseignement avec
+un type (cours, TD, examen, soutenance, amphi de présentation), matière (BD, prog web, réseau, général, etc).
+un enseignant référant
+une salle (ie E204, D103, etc.) une date (le 24 /02/2023)
+an horaire de début et de fin (ie 8h30-12h30)
+les groupes concernés (1et2, groupe 3, tousles groupes)
+
+En plus des titres de ligne et de
+colonne, les slots de cours seront
+coloriés en fonction dela matière et et deux boutons au dessus du calendrier
+permettront de passer à la semaine
+suivante ou précédente.
+Les utilisateurs avec le rôle "étudiants' pourront voir le calendrier
+Les utilisateurs avec le rôle
+"coordinateur pédagogique" pourront remplir, effacer ou déplacer des slots
+ehasine"
+dans le calendrier
+Les utilisateurs avec le rôle "responsable" pourront en plus éditer les matières, les enseignants, le s salles, etc. dans une interface de listes.
+Vous êtes libre de créer l'interface du responsable ainsi que l'interface pour
+se connecter(login - mot de passe
+
+
+Votre application web devra stocker toutes ses données dans des fichier JSON (un fichier pour lesutilisateurs, un fichier pourles salles, unfichier pour des slots de cours, etc.)
+Une fois connecté un utilisateur arrivera sur une première page de bienvenue qui lui rappelle son rôle, etluisproposeunpointeurverslecalendrierdelasemaineencoursouunpointeurversla
+page d'édition des liste s'il s'agit du responsable.
+
+
+La vue principale des 'coordinateurs pédagogiques" et des responsables sera différente car elle ajoutera des boutons
+(+) sur tous les créneaux libres et des boutons pour
+chaque slot deja créé (destruction, duplication,
+déplacement, etc.).
+
+Lorsque un bouton (+) sera activé une fenêtre de création s'ouvrira avec les champs date, horaires et groupes
+dléjà pré-remplis (mais qui porurront etre modifiés)
+" "te
+
+
+Pour aller plus loln :
+Vous ne devriez pas reproduire l'aspect visuel des exemple ci-dessus qui date de presque 20 ans!
+Vous pourrez rajouter des informations supplémentaires pour les slots de cours (commentaires des étudiants après le cours, annonce du prof avant, matériel nécessaire, possibilité de déposer un pdf pour un cours, etc.)
+L’'interface de création d'un cours pourra permettre de créer un événement récurent (ie toutes les semaines) pendant n semaines oujusqu'à une certaine date
+Vous pourrez afficher les numéros de semaine, les vacances et/ou les jours fériés.
+Nous pourrez afficher une vue particulière pour les étudiants qui ne sont que dans un groupe et ne veulent voir que leur propre groupe
+Vous pourrez afficher une vue particulière pour tout un semestre ou chaque demi-journée est simplifiée par un seul carre de couleur (vide ou plein)
+Vous pourrez afficher une vue particulière qui calcule le total d'heures de cours et de TD pour chaque matière et chaque groupe.
+
+
